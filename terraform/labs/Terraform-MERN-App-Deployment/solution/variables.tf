@@ -5,5 +5,5 @@ variable "region" {
 variable "key_name" {
   description = "Name of the SSH key pair to use for instances"
   type        = string
-  default     = "sda"
+  default     = "sda" # please change to your key name
 }

@@ -9,7 +9,7 @@ resource "aws_launch_template" "mern" {
   name_prefix   = "mern-launch-"  # Prefix for the launch template name
   image_id      = "ami-0fe8bec493a81c7da"  # Ubuntu 22.04 in eu-north-1
   # instance_type = "t3.micro"  # Free tier eligible instance type
-  instance_type = "t3.medium"  # Free tier eligible instance type
+  instance_type = "t3.medium"  
   key_name      = var.key_name  # SSH key pair for instance access
 
   # Network configuration for instances
