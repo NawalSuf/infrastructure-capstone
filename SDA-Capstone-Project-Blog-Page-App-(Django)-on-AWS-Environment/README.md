@@ -6,7 +6,7 @@ The Clarusway Blog Page Application aims to deploy blog application as a web app
 
 ## Problem Statement
 
-![Project_004](capstone.jpg)
+![Project_004](capstone.png)
 
 - Your company has recently ended up a project that aims to serve as Blog web application on isolated VPC environment. You and your colleagues have started to work on the project. Your Developer team has developed the application and you are going to deploy the app in production environment.
 
@@ -101,15 +101,15 @@ In the architecture, you can configure your infrastructure using the followings,
 
      - Create a parameter for `database master password`  :
       `Name`         : /<yourname>/capstone/password              
-      `Type`         : SecureString   (So AWS encrypts sensitive data using KMS)
+       `Type`         : SecureString   (So AWS encrypts sensitive data using KMS)
 
       - Create parameter for `database username`  :
       `Name`         : /<yourname>/capstone/username             
-      `Type`         : SecureString  (So AWS encrypts sensitive data using KMS)
+       `Type`         : SecureString  (So AWS encrypts sensitive data using KMS)
 
       - Create parameter for `Github TOKEN`  : (use your own project Github TOKEN as value)
       `Name`         : /<yourname>/capstone/token             
-      `Type`         : SecureString   (So AWS encrypts sensitive data using KMS)
+       `Type`         : SecureString   (So AWS encrypts sensitive data using KMS)
 
 
   - As S3 Bucket
@@ -125,7 +125,7 @@ In the architecture, you can configure your infrastructure using the followings,
     - Second S3 Bucket 
       
       - This Bucket is going to be used for failover scenario. It has just a basic static website that has a picture said "the page is under construction"
-  
+    
     - Retrieving Database username and password via SSM Parameter Store (Note: you need to modify the "src/cblog/settings.py" according to SSM parameter.) 
 
     - First create the application on AWS console.
@@ -193,7 +193,7 @@ clarusway_blog_proj (folder)
 - Apply git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
 ## Steps to Solution
-  
+
 - Step 1: Create Dedicated VPC And Whole Components
 
 - Step 2: Create Security Groups (ALB ---> EC2 ---> RDS)
