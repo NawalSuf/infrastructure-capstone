@@ -109,7 +109,7 @@ Name            : sda-capstone-ec2-sg
 Description     : EC2 Security Groups only allows traffic coming from `sda-capstone-alb-sg` Security Groups for HTTP and HTTPS ports. In addition, `ssh` port is allowed from anywhere
 VPC             : sda-capstone_VPC
 Inbound Rules
-HTTP(22)    ----> anywhere
+SSH(22)    ----> anywhere
 HTTP(80)    ----> sda-capstone-alb-sg
 HTTPS (443) ----> sda-capstone-alb-sg
 Custom TCP (9100) ----> anywhere
