@@ -256,9 +256,12 @@ SSM Parameters
 VPC
 
 👑 Final Notes
+
 🎓 This project was built as a capstone for Clarusway DevOps Bootcamp
+
 🧑‍💻 Team 1
 📆 Year: 2025
+
 
 ✅ All steps documented, executed, tested, and monitored successfully
 💪 Proudly completed with passion, precision, and practical proof!
